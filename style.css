@@ -1,0 +1,103 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+#search-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#diary-entries {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    width: 80%;
+}
+
+#comments {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    width: 80%;
+}
+
+#comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comment-list li {
+    padding: 0.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+#comment-list li:last-child {
+    border-bottom: none;
+}
+
+#comment-input {
+    width: 50%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+#add-comment-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#progress-bar {
+    width: 80%;
+    height: 1em;
+    border: none;
+    border-radius: 0.5em;
+}

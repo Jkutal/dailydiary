@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>josef kutalin päiväkirja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Josef Kutalin Päiväkirja</h1>
+        <input type="search" id="Hakupalkki" placeholder="Etsi...">
+        <button id="search-btn">Hae</button>
+    </header>
+    <main>
+        <section id="diary-entries">
+            <h2>tän päivän päiväkirja - keskiviikko, kesäkuu 5, 2024</h2>
+            <p>kirjoita päiväkirjaasi tähän...</p>
+            <button id="add-entry-btn">lisää uusi päiväkirja</button>
+        </section>
+        <section id="comments">
+            <h2>Kommentit</h2>
+            <ul id="comment-list">
+                <!-- comments will be displayed here -->
+            </ul>
+            <input type="text" id="comment-input" placeholder="Uusi kommentti...">
+            <button id="add-comment-btn">Lisää kommentti</button>
+        </section>
+    </main>
+    <footer>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </footer>
+</body>
+</html>

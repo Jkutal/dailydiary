@@ -1,0 +1,32 @@
+// script.js
+const searchTerm = searchInput.value.tolowecase(); // get search term
+const commentItems = commentList.querySelectorAll('li'); // get all comment items
+const searchBtn = document.getElementById('search-btn');
+const searchInput = document.getElementById('search-bar');
+const commentInput = document.getElementById('comment-input');
+const addCommentBtn = document.getElementById('add-comment-btn');
+const commentList = document.getElementById('comment-list');
+const progressBar = document.getElementById('progress-bar');
+
+searchBtn.addEventListener('click', () => {
+    // search functionality will be implemented here
+});
+
+addCommentBtn.addEventListener('click', () => {
+    const commentText = commentInput.value;
+    const newComment = document.createElement('li');
+    newComment.textContent = commentText;
+    commentList.appendChild(newComment);
+    commentInput.value = '';
+});
+
+// progress bar functionality will be implemented here
+
+commentItems.forEach(item => {
+    if (item.textContent.toLoweCase().includes(searchTerm)) {
+        item.style.display = 'block'; // show marching items
+    } else {
+        item.style.display = 'none'; // hide non-matching items
+        }
+    });
+});
